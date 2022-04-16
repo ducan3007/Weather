@@ -33,7 +33,9 @@ const WEATHER_API_KEY = "a76b88c372ad491a8e045458221404";
 
 const getGoogleMapLocation = async (latitude: number, longitude: number): Promise<GoogleMapLocation> => {
   try {
+    
     let response = await fetch(`${MAP_API}?key=${MAP_API_KEY}&language=en&latlng=${latitude},${longitude}`);
+
     let result = await response.json();
     return {
       group: result.results[0].address_components[2].long_name,

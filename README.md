@@ -1,6 +1,6 @@
 # Bài tập tuần Phát triển ứng dụng di động
 
-
+![alt text](https://github.com/ducan3007/Weather/blob/master/demo/Weather.gif)
 ### Các API và KEY
 ```typescript
 // Google Map API
